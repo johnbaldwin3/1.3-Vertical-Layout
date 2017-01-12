@@ -24,6 +24,7 @@ ul {
 }
 
 .timeline::before {
+
   content: '';
   position: absolute;
   top: 0;
@@ -65,7 +66,8 @@ ul {
   position: relative;
   transition: background-color 2s linear;
 }
-
+/* utilized the following website as a resource to help build the arrow: https://tympanus.net/codrops/2013/05/02/vertical-timeline/
+*/
 .odd::after{
 	right: 100%;
 	border: solid transparent;
@@ -78,6 +80,8 @@ ul {
 	top: 10px;
 
 }
+/* utilized the following website as a resource to help build the arrow: https://tympanus.net/codrops/2013/05/02/vertical-timeline/
+*/
 .even::after{
 	right: 100%;
 	border: solid transparent;
@@ -119,19 +123,21 @@ li > .timelabel:hover {
 .phone-icon::before {
   content: url(img/phoneicon.png);
 }
+/*phone-icon edited in photoshop by me but originally from : http://downloadicons.net/sites/default/files/android-mobile-phone-icon-94487.png */
 
 .laptop-icon::before {
   content: url(img/laptop.png);
-}
+} /*laptop icon edited in Photoshop by me but originally from: https://thenounproject.com/term/laptop/751777/ */
 
 .mail-icon::before {
   content: url(img/envelope.png);
 }
+/*envelope icon edited in Photoshop by me but originally from: http://image.flaticon.com/icons/png/128/20/20061.png */
 
 .braille-icon::before {
   content: url(img/braille.png);
 }
-
+/*braille icon edited in Photoshop by me but originally from: https://d30y9cdsu7xlg0.cloudfront.net/png/412511-200.png */
 
 img {
   width: 100%;
