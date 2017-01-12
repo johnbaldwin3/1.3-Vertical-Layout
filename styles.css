@@ -1,0 +1,153 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+body {
+  font-family: 'Cuprum', Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+.timeline > li {
+  position: relative;
+  list-style: none;
+}
+.timeline > li > div{
+  display: inline-block;
+}
+.timeline {
+  margin: 0 auto;
+  width: 998px;
+  list-style: none;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #BEDBF3;
+  left: 20%;
+  margin-left: -10px;
+}
+
+.date {
+  font-size: 16px;
+  color: #bdd0db;
+  display: inline-flex;
+  vertical-align: top;
+  text-align: right;
+  position: relative;
+
+}
+
+.time {
+  font-size: 34px;
+  color: #8BBEE7;
+  display: block;
+  vertical-align: top;
+  text-align: right;
+  padding-top: 30px;
+  margin: 0;
+
+}
+
+.timelabel {
+  padding: 38px;
+  background-color: #8BBEE7;
+  width: 55%; /*780/1438 = */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  position: relative;
+  transition: background-color 2s linear;
+}
+
+.odd::after{
+	right: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-right-color: #8BBEE7;
+	border-width: 10px;
+	top: 10px;
+
+}
+.even::after{
+	right: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-right-color: #5D94C4;
+	border-width: 10px;
+	top: 10px;
+}
+
+
+li:nth-child(even) .timelabel {
+ background-color: #5D94C4;
+}
+
+li > .timelabel:hover {
+  background-color: #E6592B;
+}
+
+.odd-t {
+  color: #8BBEE7;
+}
+
+.even-t {
+  color: #5D94C4;
+}
+.timelabel h2 {
+  border-bottom: 1px solid #a6d8f4;
+  padding-bottom: 18px;
+}
+
+.timelabel h2,
+.timelabel p {
+  color: #fff;
+}
+
+.phone-icon::before {
+  content: url(img/phoneicon.png);
+}
+
+.laptop-icon::before {
+  content: url(img/laptop.png);
+}
+
+.mail-icon::before {
+  content: url(img/envelope.png);
+}
+
+.braille-icon::before {
+  content: url(img/braille.png);
+}
+
+
+img {
+  width: 100%;
+}
+
+.icon {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: 8px solid #BEDBF3;
+  overflow: hidden;
+  position: absolute;
+  left: 13.5%;
+}
+  /*border: 8px solid #BEDBF3;*/
+
+}
+/*
+<img src='img/android-mobile-phone-icon-94487.png'>*/
